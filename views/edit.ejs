@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <form action="/update" method="post">
+            <table>
+                <%
+                for(var i=0;i<data.length;i++){
+                    %>
+                    <tr>
+                        <td>
+                            Pet Holder <input type="text" name="pethol" value="<%= data[i].pethol%>">
+                            <input type="text" name="id" value="<%= data[i].id %>" hidden/>
+                        </td>
+                        <td>
+                            Pet Name <input type="text" name="petname" value="<%= data[i].petname%>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           Category<input type="text" name="cat" value="<%= data[i].cat %>"> 
+                        </td>
+                    </tr>
+                    <%
+                
+                       }
+                   %>
+                   <tr>
+                    <td colspan="3">
+                        <button type="submit">
+                            Update
+                        </button>
+
+                    </td>
+                   </tr>
+            </table>
+        </form>    
+    </body>
+</html>

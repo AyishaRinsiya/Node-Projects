@@ -1,10 +1,13 @@
 <html>
     <head>
-        <body>
-            <style>
+        <title>Login Form</title>
+        <link rel="stylesheet" type="text/css" href="./pet.css"   >
+    </head>
+    <body>
+        <style>
                 body {
     font-family: "Roboto", sans-serif;
-    background-image: url(im.jpg);
+    background-image: url(b.jpg);
     background-size: cover;
     position: relative;
 }
@@ -15,7 +18,12 @@
     transform:translate(-50%, -50%);
     width:350px;
 }
-
+.registration-form h1{
+    font-size:30px;
+    text-align:center;
+    text-transform:uppercase;
+    margin:40px 0;
+}
     .registration-form p{
 font-size:20px;
 margin:15px 0;
@@ -39,19 +47,15 @@ margin:15px 0;
     border-radius: 5px;
     background-color:#fff;
 }
-</style>
-<div class="registration-form">
-    <h1><%= msg %></h1>
-            <form action="log" method="post">
+        </style>
+        <div class="registration-form">
+            <form action="/log" method="post">
                 <p>Username:</p>
-                <input type="text" name="username" placeholder="Username" id="" required >
+                <input type="text" name="username" placeholder="Username" >
                 <p>Password:</p>
-                <input type="password" name="password" placeholder="Password" id="" required >
-                <p>
-                <button type="submit">Login</button>
-                </p>
+                <input type="text" name="password" placeholder="Password" >
+                <button>Submit</button>
             </form>
         </div>
-        </body>
-    </head>
+    </body>
 </html>
