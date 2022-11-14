@@ -1,13 +1,11 @@
 <html>
     <head>
-        <title>Registration Form</title>
-        <link rel="stylesheet" type="text/css" href="./pet.css"   >
-    </head>
-    <body>
-        <style>
+        <link rel="stylesheet" type="text/css">
+        <body>
+            <style>
                 body {
     font-family: "Roboto", sans-serif;
-    background-image: url(b.jpg);
+    background-image: url(im.jpg);
     background-size: cover;
     position: relative;
 }
@@ -17,12 +15,6 @@
     left:50%;
     transform:translate(-50%, -50%);
     width:350px;
-}
-.registration-form h1{
-    font-size:30px;
-    text-align:center;
-    text-transform:uppercase;
-    margin:40px 0;
 }
     .registration-form p{
 font-size:20px;
@@ -47,18 +39,20 @@ margin:15px 0;
     border-radius: 5px;
     background-color:#fff;
 }
-        </style>
-        <div class="registration-form">
-            <form action="/regis" method="post">
-                
-                <p>Pet Holder:</p>
-                <input type="text" name="pethol" placeholder="Pet Holder" >
-                <p>Pet name:</p>
-                <input type="text" name="petname" placeholder="Pet Name" >
-                <p>Category:</p>
-                <input type="text" name="cat" placeholder="Category">
-                <button>Submit</button>
+</style>
+            <div class="registration-form">
+            <form action="regis" method="post">
+                <p>Username:</p>
+                   <input type="text" name="username" placeholder="Username" id="" required >
+                <p>Password:</p>
+                  <input type="password" name="password" placeholder="Password" id="" required >
+                 <p>Phone:</p>
+                   <input type="tel" name="phone" placeholder="Phone" id="" required >
+                <p>
+                <button type="submit">Register</button>
+                </p>
             </form>
         </div>
-    </body>
+        </body>
+    </head>
 </html>
