@@ -1,6 +1,5 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css">
         <body>
             <style>
                 body {
@@ -16,6 +15,7 @@
     transform:translate(-50%, -50%);
     width:350px;
 }
+
     .registration-form p{
 font-size:20px;
 margin:15px 0;
@@ -40,13 +40,15 @@ margin:15px 0;
     background-color:#fff;
 }
 </style>
-            <div class="registration-form">
-            <form action="regis" method="post">
+<div class="registration-form">
+    <h1><%= msg %></h1>
+            <form action="log" method="post">
                 <p>Email:</p>
-                   <input type="email" name="email" placeholder="Email" id="" required >
+                <input type="email" name="email" placeholder="Email" id="" required >
                 <p>Password:</p>
-                  <input type="password" name="password" placeholder="Password" id="" required >
-                <button type="submit">Register</button>
+                <input type="password" name="password" placeholder="Password" id="" required >
+                <p>
+                <button type="submit">Login</button>
                 </p>
             </form>
         </div>

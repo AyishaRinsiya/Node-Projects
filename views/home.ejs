@@ -41,12 +41,17 @@ margin:15px 0;
 }
 </style>
             <div class="registration-form">
-            <form action="regis" method="post">
-                <p>Email:</p>
-                   <input type="email" name="email" placeholder="Email" id="" required >
-                <p>Password:</p>
-                  <input type="password" name="password" placeholder="Password" id="" required >
-                <button type="submit">Register</button>
+            <form action="sub" method="post">
+                <p>name:</p>
+                   <input type="name" name="name" placeholder="Name" id="" required >
+                   <input type="text" name="email" value="<% eml %>"  hidden id="">
+                   <p>Phone:</p>
+                   <input type="tel" name="phone" placeholder="Phone" id="" required >
+                   <p>Age:</p>
+                   <input type="tel" name="age" placeholder="Age" id="" required >
+                   <p>Address:</p>
+                   <input type="text" name="address" placeholder="Address" id="" required >
+                <button type="submit">Submit</button>
                 </p>
             </form>
         </div>
