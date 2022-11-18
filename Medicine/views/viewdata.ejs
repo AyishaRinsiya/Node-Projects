@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <body>
+            <table>
+                <tr>
+                   <th>Category id</th>  <th>Category name</th>
+                </tr>
+                <%
+                for(var i=0;i<data.length;i++){
+                    %>
+                    <tr>
+                        <td><%=data[i].catid %></td>
+                        <td><%=data[i].catname %></td>
+                    </tr>
+                    <%
+                       }
+                     %>    
+                </table>
+            </body>
+        </head>
+    </html>
