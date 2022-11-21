@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <body>
+            <table>
+                <tr>
+                     <th>Pet Holder</th>   <th>Pet Name</th>  <th>Category</th>
+                </tr>
+                <%
+                for(var i=0;i<data.length;i++){
+                    %>
+                    <tr>
+                        <td><%=data[i].pethol %></td>
+                        <td><%=data[i].petname %></td>
+                        <td><%=data[i].cat %></td>
+                        <td>
+                            <a href="/delete/<%= data[i].id%>">delete</a>
+
+                        </td>
+                        <td>
+                            <a href="/edit/<%= data[i].id%>">edit</a>
+                        </td>
+                    </tr>
+                    <%
+                }
+                %>
+            </table>
+        </body>
+    </head>
+</html>
