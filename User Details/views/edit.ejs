@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <form action="/update" method="post">
+            <table>
+                <%
+                for(var i=0;i<data.length;i++){
+                    %>
+                    <tr>
+                        <td>
+                            Email <input type="text" name="email" value="<%= data[i].email%>">
+                            <input type="text" name="id" value="<%= data[i].id %>" hidden/>
+                        </td>
+                        <td>
+                            Password <input type="text" name="password" value="<%= data[i].password%>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           Name<input type="text" name="name" value="<%= data[i].name %>"> 
+                        </td>
+                        <td>
+                            Phone<input type="tel" name="phone" value="<%= data[i].phone %>"> 
+                         </td>
+                         <td>
+                            Age<input type="text" name="age" value="<%= data[i].age %>"> 
+                         </td>
+                         <td>
+                            Address<input type="text" name="address" value="<%= data[i].address %>"> 
+                         </td>
+                    </tr>
+                    <%
+                
+                       }
+                   %>
+                   <tr>
+                    <td colspan="3">
+                        <button type="submit">
+                            Update
+                        </button>
+
+                    </td>
+                   </tr>
+            </table>
+        </form>    
+    </body>
+</html>

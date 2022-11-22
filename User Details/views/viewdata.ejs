@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <body>
+            <table>
+                <tr>
+                     <th>Email</th>   <th>Password</th>  <th>Name</th> <th>Phone</th> <th>Age</th> <th>Address</th>
+                </tr>
+                <%
+                for(var i=0;i<data.length;i++){
+                    %>
+                    <tr>
+                        <td><%=data[i].email %></td>
+                        <td><%=data[i].password %></td>
+                        <td><%=data[i].name %></td>
+                        <td><%=data[i].phone %></td>
+                        <td><%=data[i].age %></td>
+                        <td><%=data[i].address %></td>
+                        <td>
+                            <a href="/delete/<%= data[i].id%>">delete</a>
+
+                        </td>
+                        <td>
+                            <a href="/edit/<%= data[i].id%>">edit</a>
+                        </td>
+
+                    </tr>
+                    <%
+                }
+                %>
+            </table>
+        </body>
+    </head>
+</html>
