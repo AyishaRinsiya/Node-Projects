@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" type="text/css" href="./pet.css"   >
+    </head>
+    <body>
+        <style>
+                body {
+    font-family: "Roboto", sans-serif;
+    background-image: url(b.jpg);
+    background-size: cover;
+    position: relative;
+}
+.registration-form{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:350px;
+}
+.registration-form h1{
+    font-size:30px;
+    text-align:center;
+    text-transform:uppercase;
+    margin:40px 0;
+}
+    .registration-form p{
+font-size:20px;
+margin:15px 0;
+    }
+
+.registration-form input {
+    font-size:16px;
+    padding:15px 10px;
+    width:100%;
+    border:0;
+    border-radius:5px;
+    outline:none;
+}
+.registration-form button {
+    font-size:18px;
+    font-weight:bold;
+    margin:20px 0;
+    padding: 10px 15px;
+    width:50%;
+    border:0;
+    border-radius: 5px;
+    background-color:#fff;
+}
+        </style>
+        <div class="registration-form">
+            <form action="/regis" method="post">
+                
+                <p>Pet Holder:</p>
+                <input type="text" name="pethol" placeholder="Pet Holder" >
+                <p>Pet name:</p>
+                <input type="text" name="petname" placeholder="Pet Name" >
+                <p>Category:</p>
+                <input type="text" name="cat" placeholder="Category">
+                <button>Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
