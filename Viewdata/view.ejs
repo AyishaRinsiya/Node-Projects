@@ -1,1 +1,30 @@
+<html>
+    <head>
+        <body>
+            <table>
+                <tr>
+                    <th>Name</th><th>Email</th><th>Contact Number</th><th>Message</th>
+                </tr>
+                <%
+                for(var i=0;i<data.length;i++){
+                    %>
+                    <tr>
+                        <td><%=data[i].name %></td>
+                        <td><%=data[i].email %></td>
+                        <td><%=data[i].contactno %></td>
+                        <td><%=data[i].message%></td>
+                        <td>
+                            <a href="/delete/<%= data[i].studid%>">delete</a>
 
+                        </td>
+                        <td>
+                            <a href="">edit</a>
+                        </td>
+                    </tr>
+                    <%
+                }
+                %>
+            </table>
+        </body>
+    </head>
+</html>
